@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Nav Bar</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: white;
+      color: #1d1d1d;
+    }
+
+    .navbar {
+      background: #f4f8f9;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #1d1d1d;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 10px;
+    }
+
+    .nav-links li a {
+      background: white;
+      padding: 8px 14px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      color: #1d1d1d;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    #menu-toggle {
+      display: none;
+    }
+
+    .menu-icon {
+      font-size: 26px;
+      cursor: pointer;
+      display: none;
+    }
+
+    .close-icon {
+      font-size: 24px;
+      cursor: pointer;
+      text-align: right;
+      margin-bottom: 20px;
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .menu-icon {
+        display: block;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        width: 200px;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        padding: 20px;
+        transition: 0.3s;
+      }
+
+      #menu-toggle:checked ~ .nav-links {
+        left: 20px;
+      }
+
+      .close-icon {
+        display: block;
+      }
+
+      .nav-links li {
+        margin: 10px 0;
+      }
+    }
+
+    .content {
+      padding: 60px 20px;
+    }
+
+    .content h1 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .content h2 {
+      font-size: 22px;
+      font-weight: 600;
+      background: #1d1d1d;
+      color: #fff;
+      display: inline-block;
+      padding: 6px 12px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">CodingLab</div>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <ul class="nav-links">
+      <label for="menu-toggle" class="close-icon">&times;</label>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Feedback</a></li>
+    </ul>
+  </nav>
+
+  <section class="content">
+    <h1>RESPONSIVE NAVIGATION BAR</h1>
+    <h2>HTML AND CSS ONLY</h2>
+  </section>
+</body>
+</html>
