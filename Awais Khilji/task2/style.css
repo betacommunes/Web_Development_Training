@@ -1,0 +1,235 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav1{
+    margin-left: 150px;
+    font-size: 1.5rem;
+    color: #3B82F6;
+}
+.nav2 ul{
+    display: flex;
+    margin-right: 150px;
+    gap: 75px;
+}
+.nav2 ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}   
+.hero-section{
+    margin-top: 200px;
+    margin-left: 150px;
+    display: flex;
+    margin-right: 200px;
+    justify-content: space-between;
+}
+.hero-section1 h1{
+    font-size: 3rem;
+    font-weight: 450;
+}.hero-section1 span{
+    color: #3B82F6;
+}
+.hero-section1 p{
+    margin-top: 25px;
+    font-size: 1.2rem;
+    line-height: 30px;
+    color: #6B7280;
+}
+
+.hero-section1 button{
+    margin-top: 30px;
+    height: 50px;
+    width: 160px;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    border: 0px;
+}
+.fa-arrow-right{
+    margin-left: 10px;
+    font-size: 1rem;
+}
+#button1{
+    background-color: #3B82F6;
+    color: white;
+}
+#button2{
+    margin-left: 10px;
+    background-color: rgb(219, 210, 228);
+}
+.hero-section2 img{
+    width: 650px;
+}
+.start-box{
+    width: 75%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: linear-gradient(rgba(211, 200, 211,0.5),rgba(211, 200, 211, 0.5)),url(./background.jpg);
+    margin-top: 150px;
+    height: 220px;
+    display: flex;
+    border-radius: 30px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 80px;
+}
+#start-heading1{
+    color: rgb(155, 21, 155);
+    margin-left: 50px;
+    font-weight: 400;
+    opacity: 0.8;
+}
+#start-heading2{
+    color: #5a4aae;
+    margin-left: 50px;
+    font-weight: 400;   
+    
+}
+.start-box2 button{
+    margin-right: 50px;
+    height: 45px;
+    width: 130px;
+    background-color: #6d49f3;
+    color: rgb(224, 216, 216);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+/*    Footer Section*/
+footer{
+    background-color: rgba(25,33,54,255);
+    width: 100%;
+    height: 550px;
+    color: white;
+}
+.footer{
+    display: flex;
+    width: 75%;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: space-between;
+}
+
+.footer1{
+    margin-top: 250px;
+}
+.footer1 h6{
+    color: #656f8a;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+}
+.footer1 p{
+    margin-bottom: 20px;
+    color: #c6cad4;
+}
+.subscription input{
+    width: 280px;
+    height: 40px;
+    font-size: 1rem;
+    padding-left: 5px;
+}
+.subscription button{
+    width: 150px;
+    height: 40px;
+    background-color: #6d49f5;
+    align-content: center;
+}
+.footer-chatlogo{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.footer-chatlogo img{
+    margin-right: 100px;
+    width: 100px;
+}
+
+@media(max-width:700px){
+    .nav1{
+        margin-left: 10px;
+    }
+    .nav2 ul {
+        gap: 5px;
+        margin-left: 10px;
+    }
+    .nav2 ul li {
+        font-size: 1rem;
+    }
+    .hero-section{
+        margin-top: 120px;
+        margin-left: 10px;
+        margin-right: 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+    }
+    .hero-section1 h1{
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    .hero-section1 p{
+        font-size: 1rem;
+    }   
+    .hero-section2 img{
+        margin-top: 100px;
+        width: 350px;
+    }
+
+    .start-box{
+        width: 90%;
+        margin-right: 20px;
+        margin-left: 15px;
+    }
+    #start-heading1{
+        margin-left: 10px;
+        font-size: 1.5rem;
+    }
+    #start-heading2{
+        margin-left: 10px;
+        font-size: 1.4rem;  
+    }
+    .start-box2 button{
+        margin-right: 10px;
+    }
+    .footer{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+   .footer-logo img{
+    width: 40px;
+   }
+   .footer1 h6{
+    font-size: 1rem;
+    margin-left: 2px;
+   }
+   .footer1 P{
+    font-size: 15px;
+    margin-left: 5px;
+   }
+   .subscription input{
+    width: 180px;
+    height: 30px;
+    margin-bottom: 5px;
+   }
+   .subscription button{
+    width: 120px;
+    height: 30px;
+   }
+   .footer-product h6{
+    margin-bottom: 46px;
+   }
+   .footer-chatlogo img{
+    margin-right: 5px;
+    width: 80px;
+   }
+}
