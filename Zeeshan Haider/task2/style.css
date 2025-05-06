@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fcff;
+    color: #2d2d2d;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 4%;
+  }
+  .logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #3b82f6;
+  }
+  nav a {
+    margin-left: 32px;
+    text-decoration: none;
+    color: #6b7280;
+    font-weight: 500;
+  }
+  nav a:hover{
+    color: blue;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    padding: 64px 4%;
+  }
+  .hero-text {
+    max-width: 600px;
+  }
+  .hero-text h1 {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+  .hero-text h1 span {
+    color: #3b82f6;
+  }
+  .hero-text p {
+    color: #6b7280;
+    margin-bottom: 32px;
+    font-size: 18px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .btn {
+    padding: 12px 24px;
+    font-weight: 500;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .btn-primary {
+    background-color: #3b82f6;
+    color: white;
+  }
+  .btn-secondary {
+    background-color: #e0e7ff;
+    color: #3b82f6;
+  }
+  .hero-image {
+    max-width: 500px;
+    margin-bottom: 48px;
+  }
+  .hero-image img {
+    width: 100%;
+  }
+
+ 
+  .cta-box {
+    background-color: #f1ebfb;
+    padding: 40px 24px;
+    border-radius: 24px;
+    max-width: 1100px;
+    margin: 48px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: -70px;
+    z-index: 3;
+    position: relative;
+  }
+
+  .cta-box h2 {
+    font-size: 1.8rem;
+    color: #6c3fc9;
+    margin-bottom: 1rem;
+  }
+  .cta-box h2 span {
+    font-size: 1.7rem;
+    color: #9a82ca;
+    margin-bottom: 1rem;
+  }
+  .cta-box button {
+    background: #6c3fc8;
+    border: none;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  /* Footer Section */
+  footer {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    padding: 140px 0;
+    z-index: 2;
+    position: relative;
+  }
+
+  .footer-container {
+    max-width: 1100px;
+    margin: auto;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+   
+  }
+
+  .footer-logo {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .footer-column {
+    flex: 1 1 200px;
+
+  }
+
+  .footer-column h4 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #94a3b8;
+  }
+
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-column ul li {
+    margin-bottom: 0.6rem;
+  }
+
+  .footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+  }
+  .footer-column ul li a:hover{
+    color: #3e68ab;
+  }
+
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .subscribe input {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 0.8rem;
+  }
+
+  .subscribe button {
+    background: #6c3fc9;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  .subscribe button:hover{
+    color: black;
+    transition: all 1s ease-in-out;
+  }
+  .icon{
+    font-size: 70px;
+    position: absolute;
+    left: 91%;
+    top: 65%;
+  }
+
+
+  @media(min-width: 768px) {
+    .hero {
+      flex-direction: row;
+      text-align: left;
+      justify-content: space-between;
+    }
+    .hero-text {
+      max-width: 50%;
+    }
+    .hero-image {
+      max-width: 45%;
+      margin-bottom: 0;
+    }
+    .cta-box {
+        flex-wrap: nowrap;
+        padding: 3rem 4rem;
+      }
+  
+      .cta-box h2 {
+        font-size: 2rem;
+      }
+  
+      .subscribe {
+        flex-direction: row;
+        align-items: center;
+      }
+  
+      .subscribe input {
+        margin-right: 1rem;
+        margin-bottom: 0;
+        flex: 1;
+      } 
+    
+}
+
+
+
+
