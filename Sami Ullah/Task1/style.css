@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 2rem;
+  align-items: center;
+  background-color: rgba(239, 240, 244, 1);
+  box-shadow: 5px 2px lightgrey;
+}
+
+#header-right {
+  display: flex;
+  gap: 1rem;
+}
+
+#header-right a {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: lightgrey;
+  box-shadow: 2px 2px grey;
+  font-size: 18px;
+}
+
+#mobile-screen-menu-check {
+  display: none;
+}
+
+#mobile-screen-menu-check:checked + #mobile-screen-menu {
+  display: flex;
+}
+
+#mobile-screen-menu-icon {
+  font-size: 20px;
+  border: 2px solid lightgrey;
+  padding: 2px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#mobile-screen-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-size: 20px;
+  border: 2px solid lightgrey;
+  box-shadow: 2px 5px gray;
+  width: 250px;
+  padding: 2rem 0 2rem;
+  position: absolute;
+  left: 20px;
+  top: 5rem;
+  border-radius: 10px;
+  z-index: 10;
+  display: none;
+}
+
+#mobile-screen-menu a {
+  padding: 5px 0;
+}
+
+#mobile-screen-menu a:hover {
+  background-color: lightgrey;
+  width: 55%;
+  text-align: center;
+}
+
+#mobile-screen-menu #close-icon-wrapper {
+  cursor: pointer;
+  width: 100%;
+  text-align: end;
+  position: absolute;
+  right: 1rem;
+  top: 5px;
+}
+
+#mobile-screen-menu #close-icon-wrapper:hover {
+  background-color: transparent;
+  width: 100%;
+  text-align: end;
+}
+
+#mobile-screen-menu #close-icon-wrapper i {
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  padding: 2px 5px;
+  font-size: 25px;
+}
+
+@media screen and (min-width: 800px) {
+  #mobile-screen-menu-icon,
+  #mobile-screen-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #header-right {
+    display: none;
+  }
+}
