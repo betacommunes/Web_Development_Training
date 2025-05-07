@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+
+    font-family: 'Roboto';
+
+    overflow-x: hidden;
+}
+
+
+
+.header-logo{
+
+    font-size: 34px;
+
+    font-weight: bold;
+
+    color: #3B82F6;
+
+    margin: 0;
+}
+
+
+#check{
+
+    display: none;
+}
+
+
+.menu-btns .menu , .menu-btns .close{
+
+    font-size: 23px;
+
+    line-height: 45px;
+
+    display: none;
+
+    cursor: pointer;
+
+    color: #6B7280;
+}
+
+
+.Nav{
+
+    margin: 0;
+
+    padding: 0;
+
+    list-style: none;
+
+    display: flex;
+}
+
+
+.Nav .nav-items .nav-links{
+    
+    text-decoration: none;
+
+    font-size: 17.5px;
+
+    font-weight: 500;
+
+    text-transform: capitalize;
+
+    display: block;
+
+    padding: 8px 15px;
+
+    color: #6B7280;
+
+    position: relative;
+}
+
+.Nav .nav-items .nav-links::before{
+
+    content: "";
+
+    width: 0;
+
+    height: 3px;
+
+    background: #6B7280;
+
+    position: absolute;
+
+    left: 14px;
+
+    top: 31px;
+
+    transition: 0.5s all ease-in-out;
+}
+
+.Nav .nav-items .nav-links:hover::before{
+
+   width: 70%;
+}
+
+
+.banner-section , .call-to-action{
+
+    padding: 50px 0;
+}
+
+
+.banner-section{
+
+    padding-bottom: 0;
+    
+    margin-bottom: -5px;
+}
+
+.banner-content{
+
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.banner-content h2{
+
+    font-size: 31px;
+
+    font-weight: 500;
+
+    line-height: 43px;
+
+    margin-bottom: 0;
+}
+
+
+.banner-content h2 span{
+
+    color: #3B82F6;
+}
+
+
+.banner-content p{
+
+    font-size: 17.5px;
+
+    font-weight: 500;
+
+    color: #6B7280;
+
+    margin: 15px 0;
+}
+
+
+.banner-img img{
+
+    width: 100%;
+}
+
+
+.buttons-box{
+
+    margin-top: 15px;
+
+}
+
+
+
+.buttons-box .pages-btn , .doc-btn , .cta-button-box .cta-button , .form-container .subscribe-btn{
+
+   border: none;
+
+   padding: 10px 15px;
+
+   text-transform: capitalize;
+
+   border-radius: 7px;
+
+   font-size: 15px;
+
+   position: relative;
+
+    z-index: 1;
+}
+
+
+.buttons-box .pages-btn::before , .doc-btn::before , .cta-button-box .cta-button::before , .form-container .subscribe-btn::before{
+
+    content: "";
+
+    width: 100%;
+
+    height: 50%;
+
+    border-radius: 7px 7px 0 0;
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    z-index: -1;
+    
+    transition: 0.4s all ease-in;
+}
+
+
+.buttons-box .pages-btn::after , .doc-btn::after , .cta-button-box .cta-button::after , .form-container .subscribe-btn::after{
+
+    content: "";
+
+    width: 100%;
+
+    height: 50%;
+
+    border-radius: 0 0 7px 7px;
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 0;
+
+    z-index: -1;
+    
+    transition: 0.4s all ease-in;
+}
+
+
+
+.buttons-box .pages-btn , .cta-button-box .cta-button{
+
+    background: #3B82F6;
+
+    color: #fff;
+
+    margin-right: 10px;
+    
+    overflow: hidden;
+}
+
+
+.buttons-box .pages-btn::before , .pages-btn::after , .cta-button-box .cta-button::before , .cta-button-box .cta-button::after{
+
+    background: #0062a4;
+}
+
+
+
+.buttons-box .doc-btn , .form-container .subscribe-btn{
+
+    background: #CCCCFF;
+
+    overflow: hidden;
+}
+
+
+.buttons-box .doc-btn::before , .doc-btn::after , .form-container .subscribe-btn::before , .form-container .subscribe-btn::after{
+
+    background: #fda619;
+}
+
+
+.buttons-box .pages-btn:hover::before , .doc-btn:hover::before , .cta-button-box .cta-button:hover::before , .form-container .subscribe-btn:hover::before{
+
+    top: -50%;
+}
+
+
+.buttons-box .pages-btn:hover::after , .doc-btn:hover::after , .cta-button-box .cta-button:hover::after , .form-container .subscribe-btn:hover::after{
+
+    bottom: -50%;
+}
+
+
+.call-to-action{
+
+    background: #CCCCFF;
+
+    border-radius: 15px;
+
+    position: relative;
+
+    top: 74px;
+}
+
+.cta-content{
+
+    padding-left: 65px;
+
+}
+
+.cta-content h3 span{
+
+    color: #3B82F6;
+}
+
+.cta-button-box  , .cta-button-box .cta-button{
+
+    margin: 0;
+    
+}
+
+
+.cta-button-box .cta-button{
+
+    padding: 10px 20px;
+
+}
+
+
+.footer-section{
+
+    background: #0062a4;
+
+    color: #fff;
+
+    padding-top: 250px;
+
+    padding-bottom: 30px;
+}
+
+
+.footer-logo .slack-icon{
+
+    font-size: 40px;
+
+    overflow: hidden;
+}
+
+
+.footer-about h5 , .footer-widget h5 , .newsletter h5{
+
+    font-size: 15.5px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 30px;
+
+    color: #CCCCFF;
+}
+
+
+.about-aside , .widget-aside{
+
+    list-style: none;
+    
+    padding: 0;
+}
+
+
+.about-aside li .about-links , .widget-aside li .widget-links{
+
+    color: #fff;
+
+    text-decoration: none;
+
+    text-transform: capitalize;
+
+    display: block;
+}
+
+
+.newsletter p{
+
+    margin: 0;
+}
+
+
+.form-container{
+
+    display: flex;
+    
+}
+
+
+.form-container input{
+
+    height: 44px;
+
+    flex-grow: 2;
+
+    text-indent: 8px;
+
+    margin-right: 7px;
+
+    font-size: 15px;
+
+    color: #6B7280;
+}
+
+
+.form-container input::placeholder{
+
+    font-size: 15px;
+}
+
+
+.form-container input:focus{
+
+    outline: none;
+}
+
+.form-container .subscribe-btn{
+
+    flex-grow: 1;
+
+}
+
+@media screen and (max-width: 992px) {
+    
+    .Nav{
+
+        position: fixed;
+
+        top: 45px;
+
+        left: -100%;
+
+        background: #3B82F6;
+
+        width: 100%;
+
+        height: 100vh;
+
+        display: block;
+
+        padding-top: 55px;
+
+        text-align: center;
+
+        z-index: 4;
+
+        transition: 0.4s all ease-in;
+    }
+
+    .Nav .nav-items .nav-links{
+
+        color: #fff;
+
+    }
+
+    .menu-btns .menu{
+    
+        display: inline-block;
+    }
+    
+    #check:checked ~ .Nav{
+
+        left: 0;
+    }
+
+    #check:checked ~ .menu-btns .menu::before{
+
+        font-family: "Font Awesome 6 Free";
+
+        content: "\f00d";
+
+
+    }
+
+
+    .Nav .nav-items .nav-links::before{
+
+        left: 40%;
+        
+        background: #fff;
+    }
+
+    .Nav .nav-items .nav-links:hover::before{
+
+        width: 20%;
+
+    }
+
+    .footer-section{
+
+        padding-top: 170px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 767px){
+
+    .call-to-action{
+
+        top: 40px;
+
+        padding: 35px 0;
+    }
+
+    .cta-content{
+
+        padding-left: 0;
+
+        text-align: center;
+
+        margin-bottom: 30px;
+    }
+
+
+    .footer-section{
+
+        padding-top: 130px;
+    }
+
+
+    .footer-logo , .footer-widget{
+
+        margin-bottom: 50px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 576px){
+
+    .call-to-action{
+
+        top: 0px;
+
+        padding: 35px 0;
+
+        border-radius: 0;
+    }
+
+    .banner-section{
+
+        padding-bottom: 15px;
+    }
+
+    .banner-content{
+
+        padding-left: 15px;
+    }
+
+    .footer-section{
+
+        padding-top: 70px;
+    }
+    
+}
