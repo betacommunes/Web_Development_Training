@@ -1,0 +1,253 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  padding: 8px 1rem;
+  border-radius: 5px;
+  margin-right: 1rem;
+  margin-top: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 5rem 5px 3rem;
+}
+
+#header-right {
+  display: flex;
+  gap: 3rem;
+  font-size: 20px;
+  padding: 5px 0;
+}
+
+/* Mobile screen menu */
+#mobile-screen-menu-check {
+  display: none;
+}
+
+#mobile-screen-menu-check:checked + #mobile-screen-menu {
+  display: flex;
+}
+
+#mobile-screen-menu-icon {
+  font-size: 20px;
+  border: 2px solid lightgrey;
+  padding: 2px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#mobile-screen-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  font-size: 20px;
+  border: 2px solid lightgrey;
+  box-shadow: 2px 5px gray;
+  width: 250px;
+  padding: 2rem 0 2rem;
+  position: absolute;
+  right: 5px;
+  top: 4rem;
+  border-radius: 10px;
+  z-index: 10;
+  display: none;
+  background-color: lightgrey;
+}
+
+#mobile-screen-menu a {
+  padding: 5px 0;
+}
+
+#mobile-screen-menu a:hover {
+  background-color: gray;
+  width: 55%;
+  text-align: center;
+}
+
+#mobile-screen-menu #close-icon-wrapper {
+  cursor: pointer;
+  width: 100%;
+  text-align: end;
+  position: absolute;
+  right: 1rem;
+  top: 5px;
+}
+
+#mobile-screen-menu #close-icon-wrapper:hover {
+  background-color: transparent;
+  width: 100%;
+  text-align: end;
+}
+
+#mobile-screen-menu #close-icon-wrapper i {
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  padding: 2px 5px;
+  font-size: 25px;
+}
+
+/* Hero section */
+#hero-section {
+  display: flex;
+  justify-content: space-between;
+  min-height: 110vh;
+  align-items: center;
+  padding: 0 5rem 0 3rem;
+  background-color: #fafcfb;
+}
+
+#hero-section-left {
+  width: 40%;
+}
+
+#hero-section-right {
+  width: 45%;
+}
+
+#hero-section-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#hero-section-img {
+  mix-blend-mode: multiply;
+  width: 100%;
+}
+
+/* Footer */
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#get-started-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  width: 80vw;
+  margin: auto;
+  border-radius: 20px;
+  position: absolute;
+  top: -5rem;
+  background-color: #f3effe;
+  border: 2px solid lightgrey;
+}
+
+#footer {
+  width: 100%;
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 3rem;
+  background-color: #192136;
+  color: white;
+}
+
+#footer-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 7rem 1rem 0;
+}
+
+#footer-section-title {
+  font-size: 18px;
+  opacity: 0.6;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#footer input {
+  padding: 7px;
+  font-size: 18px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1150px) {
+  #hero-section-left {
+    width: 50%;
+  }
+  #hero-section-right {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    padding: 0 2rem;
+  }
+  #hero-section-right {
+    display: none;
+  }
+  #hero-section {
+    justify-content: center;
+    padding: 0 2rem;
+  }
+
+  #hero-section-left {
+    width: 100%;
+  }
+  #footer {
+    padding: 3rem 1rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #mobile-screen-menu-icon,
+  #mobile-screen-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #header-right {
+    display: none;
+  }
+  #get-started-section {
+    width: 90vw;
+    padding: 3rem 0px 3rem 10px;
+  }
+  #get-started-section h2 {
+    font-size: 17px;
+  }
+  #get-started-section button {
+    padding: 0px 10px;
+    font-size: 14px;
+  }
+  #last-footer-list {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #hero-section,
+  header {
+    padding: 5px 10px;
+  }
+}
