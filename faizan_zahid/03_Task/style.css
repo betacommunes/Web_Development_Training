@@ -1,0 +1,56 @@
+   .eachlist{
+        background-color: wheat;
+        border-radius: 5px;
+        padding: 5px 0;
+        margin: 5px 0;
+        margin-left: 4px;
+    }
+
+    .edit{
+        background-color: gray;
+        border-radius: 5px;
+        padding: 5px 8px;
+        margin: 5px 2px;
+
+    }
+
+    /* btn edit hover */
+    .edit:hover{
+        background-color: rgb(4, 204, 4);
+        color: wheat;
+    }
+
+    .delete{
+        background-color: rgb(231, 48, 48);
+        border-radius: 5px;
+        padding: 5px 8px;
+        margin: 5px 0;
+
+    }
+
+    /* btn delete hover */
+    .delete:hover{
+        background-color: red;
+        color: wheat;
+    }
+
+    @media (max-width: 650px) {
+        #container{
+            width: 90%;
+        }
+    }
+
+    @media (max-width: 350px) {
+        #container{
+            width: 100%;
+        }
+
+        #content{
+            padding: 0rem 0rem;
+        }
+
+        #todo_list{
+            width: max-content;
+        }
+
+    }

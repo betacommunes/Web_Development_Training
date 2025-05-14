@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body class="bg-blue-300">
+
+<!---------------------------- todo-lists -->
+<div class="w-1/2 rounded-xl m-auto mt-15 px-3 py-3 bg-gray-700" id="container">
+
+    <!-------------------------- main-heading -->
+    <h1 class="text-center font-bold">TODO LISTS</h1>
+
+    <!---------------------------- enter_todo -->
+    <div class="m-auto ml-6 p-4 flex items-center " id="content">
+        <input 
+            class='w-10/12 bg-gray-400 rounded-xl p-2 mt-1 m-1 focus:bg-white focus:outline-none transition ease-in-out duration-150 placeholder-gray-600'
+            id="input_task"
+			type="text" 
+            placeholder="enter todo ...">
+                        
+        <button class='w-28 bg-sky-300 rounded-2xl hover:bg-sky-500 px-1 py-2'  id="add_btn">
+                        add Todo
+        </button>
+    </div>
+
+    <!-----------------------------todo_list -->
+    <div class="ml-6 p-4 ">
+        <ul id="todo_list" class=" grid grid-cols-2">
+
+        </ul>
+    </div>
+
+</div>
+
+  <script src="todo.js"></script>
+  </body>
+</html>
