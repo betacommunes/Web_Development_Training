@@ -15,5 +15,5 @@
 | No. | Date       | Task Name                                                   | Status  | View                                                                 |
 |-----|------------|--------------------------------------------------------------|---------|----------------------------------------------------------------------|
 | 1   | 2025-05-01 | Responsive Navbar with HTML, CSS only (design via WhatsApp) | Done    | [Live](https://noumanalin.github.io/Beta_Communes_Web_Development_Internship/task1/) |
-| 2   | - 2025-05-4         |  Devkit Landing Page                                                           | Done | -                                                                    |
-| 3   | -          | -                                                            | Pending | -                                                                    |
+| 2   | 2025-05-4         |  Devkit Landing Page                                                           | Done | -                                                                    |
+| 3   | 2025-05-12          | CRUD Operation using HTML,CSS,JS                                                           | Done | -                                                                    |
