@@ -1,0 +1,14 @@
+/* style.css (optional custom tweaks) */
+
+.edit-btn,
+.delete-btn {
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.edit-btn:focus,
+.delete-btn:focus {
+  outline: 2px solid #60a5fa; /* Tailwind blue-400 */
+  outline-offset: 2px;
+}

@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+
+    margin: 0;
+
+    padding: 0;
+
+    font-family: "Exo 2";
+
+}
+
+
+body{
+
+    background: wheat;
+}
+
+
+.Navbar{
+
+    padding: 0;
+
+    margin: 0;
+
+    list-style: none;
+
+    display: flex;
+
+
+}
+
+
+.nav-items .nav-links{
+
+    text-decoration: none;  
+
+    display: block;
+
+    padding: 8px 15px;
+
+    font-size: 16.5px;
+
+    text-transform: uppercase;
+
+    background: #333333;
+
+    color: #fff;
+
+    margin-right: 10px;
+
+    font-weight: 600;
+
+    transition: 0.4s all ease-in-out;
+}
+
+
+.nav-items .nav-links:hover{
+
+    background: #b53471;
+
+    border-radius: 0px 25px 0px 20px;
+
+    transform: rotate(-3deg) skew(2deg);
+
+    letter-spacing: 3px;
+}
+
+
+.aside-nav{
+
+    list-style: none;
+
+    margin: 0;
+
+    padding: 0;
+
+    background: #333333;
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+}
+
+
+.aside-nav .aside-items{
+
+    width: 100%;
+
+    margin-bottom: 15px;
+
+}
+
+
+.aside-nav .aside-links{
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    font-weight: 500;
+
+    color: #fff;
+
+    text-transform: uppercase;
+
+    display: block;
+
+    padding: 8px 20px;
+    
+    transition: 0.5s all ease-out;
+}
+
+
+.aside-nav .aside-links:hover{
+
+    background: #b53471;
+    
+    border-radius: 0px 20px 0px 20px;
+
+    letter-spacing: 3px;
+
+    transform: translateX(-5px) skew(7deg);
+    
+}
+
+
+.aside-close{
+
+    color: #fff;
+
+    text-align: right;
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+
+    cursor: pointer;
+    
+}
+
+
+@media screen and (max-width: 767px) {
+
+    .Navbar{
+
+        display: none;
+    }
+}

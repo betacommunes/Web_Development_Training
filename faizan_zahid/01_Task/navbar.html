@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01_task</title>
+
+<style type="text/css">
+
+/*-------------------web-page customize*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    background-color: lightcyan;
+}
+
+/*----------------------------navbar*/
+.navbar{
+    width: auto;
+    border-bottom: 2px solid gray;
+    background-color: lightgray;
+    padding: 1em 2em;
+    display: grid;
+    grid-template-columns: auto auto ;
+    gap: 10px;
+    align-items: center;
+}
+
+/*--------------------------div-1*/
+.mainlogo {
+/*   border: 2px solid black;*/
+   font-size: 1.2rem;
+   font-weight: bold;
+}
+
+/*--------------------------div-2*/
+.nav-links {
+  list-style: none;
+  display: flex;
+/*  border: 2px solid black;*/
+  justify-self: right;
+  padding: 0rem 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  margin-left: 2rem;
+  color: black;
+  border: 1px solid grey;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+/*---------------navigation*/
+.sider{
+    width: 20%;
+}
+.navigation{
+  list-style: none;
+  border: 1px solid grey;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  margin: 1rem 1rem;
+  display: none;
+
+}
+
+.navigation li{
+  margin-top: 1rem;
+  text-align: center;
+
+}
+
+.navigation li a{
+  color: black;
+  text-decoration: none;
+
+}
+
+
+
+
+/*-----------------------------------hover effect*/
+.nav-links li:hover a {
+  color: #00bcd8;
+  border: 2px solid #00bcd8;
+  font-weight: bold;
+}
+
+.nav-links li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 60%;
+  background-color: #00bcd4;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+  margin-left: 2.5rem;
+}
+
+.nav-links li:hover::after {
+  transform: scaleX(1);
+}
+
+.navigation li:hover  {
+  border: 2px solid #00bcd8;
+}
+
+.navigation li:hover a {
+  color: #00bcd8;
+  font-weight: bold;
+}
+
+
+/*------------------------------Responsive Styles */
+
+@media (max-width: 786px) {
+    .navbar{
+       width: fit-content;
+    }
+
+    .sider{
+    width: 40%;
+}
+
+    .navigation{
+        display: block;
+        padding: 2rem 1rem;
+        margin: 1rem 1rem;
+
+}
+.navigation li a{
+  padding: 1rem 1rem;
+
+}
+}
+
+@media (max-width: 425px) {
+   .navbar{
+       width: auto;
+    }
+
+  .nav-links {
+    display: none;
+ }
+
+  .mainlogo h1{
+    text-align: center;
+  }
+
+  .sider{
+    width: 80%;
+    margin: auto;
+}
+
+  }
+</style>
+</head>
+
+
+<body>
+
+<!-- ----------------------------navbar -->
+<nav class="navbar">
+
+<!-- --------------------------div-1 -->
+    <div class="mainlogo">
+       <h1> CodingLab</h1>
+    </div>
+
+<!-- --------------------------div-2 -->
+    <div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </div>
+
+</nav>
+
+<!-- --------------------------navigation -->
+
+<div class="sider">
+    <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Feedback</a></li>
+        </ul>
+    </div>
+
+
+</body>
+</html>

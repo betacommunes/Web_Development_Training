@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO | Html, Css, JS</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="container">
+        <h1>Manage Your Task</h1>
+    </header>
+
+    <main class="container">
+        
+        <div id="alert" class="alert"></div>
+
+        <form id="todoForm">
+            <input type="text" id="todoInput" placeholder="Enter a new task...">
+            <button type="submit" id="formBtn" class="btn">Add</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>SR.</th>
+                    <th>Name</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+
+            <tbody id="todoList">
+                <!-- Tasks insertes dynamically -->
+            </tbody>
+        </table>
+    </main>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>

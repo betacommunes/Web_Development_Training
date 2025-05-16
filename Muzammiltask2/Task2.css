@@ -1,0 +1,209 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   list-style: none;
+   text-decoration: none;
+   font-family: sans-serif;
+  
+}
+body{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+.header{
+    /* position: ;
+    top: 0;
+    left: 0; */
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 32px;
+    color: #3B82F6;
+    font-weight: 700px;
+    font-family: sans-serif;
+  
+}
+.navbar a{
+    font-size: 18px;
+    color: #6B7280;
+    font-weight: 500px;
+    margin-left: 50px;
+    position: relative;
+}
+.text{
+    position: relative;
+    top: 10rem;
+    left: 0rem;
+    letter-spacing: 1px;
+    margin-left: 100px;
+}
+.text h2{
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+span{
+    color: #3B82F6;
+}
+.text p{
+    font-size: 20px;
+    color: #6B7280;
+    padding: 15px 0;
+    font-weight: 500;
+}
+.btn{
+    color: white;
+    border: 2px solid;
+    position: relative;
+    top: 3rem;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-radius: 6px;
+    background-color: #3B82F6;
+}
+#btn1{
+    background-color: rgba(130, 126, 183, 1);
+}
+.text img{
+    position: absolute;
+    top: -8rem;
+    right: 55px;
+}
+@media screen and (max-width:767px){
+       .text{
+          font-size: 0.95rem;
+          margin: 1.4rem 0 1.5rem;
+         
+       }
+       .text img{
+          max-width: 450px;
+          height: 100%;
+          position: relative;
+          top: 10px;
+          left: 0;
+        
+        }
+     .text h2{
+        margin: 0 10px;
+     }
+}
+
+.newsletter_wrap{
+    padding: 80px 0;
+   margin-top: -70px;
+    
+}
+.newsletter_box{
+    padding: 20px  50px 50px 50px;
+    background: rgba(181, 178, 227, 1);
+    border-radius: 10px;
+    position: relative;
+    left: 0;
+    top: 30rem;
+    z-index: 1;
+    height: 30vh;
+}
+.newsletter_box h5{
+    font-size: 25px;
+    color: rgba(133, 128, 209, 1);
+    margin-bottom: 30px 0 10px 0;
+    display: block;
+    margin-top: 10px;
+}
+.newsletter_box h3{
+    font-size: 30px;
+    color: #3B82F6;
+    margin-top: 20px;
+}
+.subscribe-form button{
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #3B82F6;
+    color: #fff;
+    border: 2px solid #3B82F6;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-top: 50px;
+}
+.main-wrapper{
+     width: 100%;
+     background: rgba(16, 11, 86, 1);
+     height: 300px;
+}
+.footer-wrapper{
+    position: relative;
+    margin-top: 310px;
+    width: 100%;
+    padding: 40px;
+    background: rgba(16, 11, 86, 1);
+}
+.footer-wrap-1{
+    display: flex;
+}
+.footer-section{
+    width: 22%;
+    display: block;
+    padding: 10px 35px;
+    margin-top: 100px;
+}
+.footer-section:last-of-type{
+    width: 34%;
+}
+.footer-section h1{
+    font-size: 22px;
+    color: rgba(130, 126, 183, 1);
+    margin-bottom: 8px;
+}
+.footer-section a{
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    padding: 4px 0px;
+}
+form{
+    position: relative;
+}
+form input{
+    position: absolute;
+    height: 35px;
+    width: 220px;
+    margin: 8px 0px;
+    border: none;
+    outline: none;
+    padding: 6px;
+    font-size: 14px;
+}
+form #btn{
+    height: 35px;
+    background: #3B82F6;
+    border: none;
+    padding: 0px 6px;
+    margin: 8px 0px;
+    position: absolute;
+    left: 60%;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+}
+.footer-section p{
+    color: #fff;
+    font-size: 16px;
+}
+#logo{
+    font-size: 35px;
+    padding: 20px;
+    color: #fff;
+}

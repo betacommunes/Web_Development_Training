@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar-brand {
+  color: #3B82F6 !important;
+  font-weight: 600;
+}
+
+.nav-link {
+  color: #6B7280 !important;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Hero Section */
+h1 {
+  font-weight: 400;
+}
+
+.title {
+  color: #3B82F6;
+}
+
+.hero-col{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.hero-btn{
+    font-size: 16px;
+}
+.lead {
+  color: #6B7280;
+  font-weight: 400;
+  margin: 30px 0;
+  padding-right: 10%;
+}
+
+.btn-secondary {
+  background-color: #e2e3e5 !important;
+  color: #333 !important;
+}
+
+/* Newsletter */
+.newsletter-wrapper {
+  margin-bottom: -60px;
+  position: relative;
+  z-index: 2;
+}
+
+.newsletter-box {
+  background: #f1edfc;
+  padding: 50px;
+  border-radius: 2rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.newsletter-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #6f42c1;
+}
+
+.newsletter-subheading {
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.newsletter-box .btn-primary {
+  background-color: #6f42c1;
+  border: none;
+}
+
+.newsletter-box .btn-primary:hover {
+  background-color: #5a35a0;
+}
+
+/* Footer */
+footer {
+  background-color: #1e2235;
+  color: #ddd;
+}
+
+footer h5 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+.btn-subscribe {
+  background-color: #6f42c1;
+  color: #fff;
+  padding: 10px 1.5rem;
+  border: none;
+}
+
+.btn-subscribe:hover {
+  background-color: #5a35a0;
+}
+
+.small {
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+  .lead {
+    padding-right: 0;
+  }
+
+  .newsletter-box {
+    padding: 30px 20px;
+  }
+
+  .newsletter-heading {
+    font-size: 1.5rem;
+  }
+
+  .newsletter-subheading {
+    font-size: 1rem;
+  }
+
+  .btn-lg {
+    width: 100%;
+  }
+}

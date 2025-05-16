@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(238, 230, 230);
+        box-shadow: 0px 0px 10px black;
+    }
+
+    .list ul {
+        display: flex;
+        gap: 4px;
+        margin-right: 4px;
+    }
+
+    .list li {
+        list-style: none;
+
+    }
+
+    button {
+        cursor: pointer;
+        border-style: none;
+        padding: 4px;
+        margin: 8px;
+        border-radius: 4px;
+    }
+
+    .list button {
+        box-shadow: 0px 0px 4px black;
+    }
+
+    .list button:hover {
+        padding: 4px;
+        font-weight: bold;
+        color: white;
+
+    }
+
+    .logo {
+        font-weight: bold;
+        margin: 4px;
+    }
+
+    .sidebar {
+        padding: 20px;
+        margin: 10px;
+        width: 300px;
+        margin-top: 15vh;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0px 0px 10px black;
+        height: 30vh;
+        position: absolute;
+        background-color: rgb(238, 230, 230);
+    }
+
+    .list2 li {
+        list-style: none;
+    }
+
+    .list2 li button {
+        background: none;
+    }
+
+    .list2 button:hover {
+        padding: 5px;
+        background-color: rgba(255, 255, 255, 0.452);
+
+    }
+
+    .close {
+        height: fit-content;
+        position: relative;
+        left: 100px;
+        background: none;
+        font-weight: bolder;
+        width: 30px;
+        bottom: 10px;
+    }
+
+    .close:hover {
+        padding: 4px;
+        background-color: rgb(235, 12, 12);
+        color: white;
+    }
+
+    li a {
+        text-decoration: none;
+        color: black;
+    }
+</style>
+
+<body>
+    <div class="navbar">
+        <div class="logo">CodingLog</div>
+        <div class="list">
+            <ul>
+                <li><button><a href="" target="_blank">Home</a></button></li>
+                <li><button><a href="" target="_blank">About</a></button></li>
+                <li><button><a href="" target="_blank">Services</a></button></li>
+                <li><button><a href="" target="_blank">Contact</a></button></li>
+                <li><button><a href="" target="_blank">Feedback</a></button></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sidebar">
+        <div class="list2">
+            <ul>
+                <li><button><a href="" target="_blank">Home</a></button></li>
+                <li><button><a href="" target="_blank">About</a></button></li>
+                <li><button><a href="" target="_blank">Services</a></button></li>
+                <li><button><a href="" target="_blank">Contact</a></button></li>
+                <li><button><a href="" target="_blank">Feedback</a></button></li>
+            </ul>
+        </div>
+        <button class="close"> x</button>
+    </div>
+    </div>
+</body>
+
+</html>

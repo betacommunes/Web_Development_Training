@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devkit</title>
+    <style>
+        :root {
+            --primary-blue: #3B82F6;
+            --text-black: #111827;
+            --text-gray: #6B7280;
+            --bg-white: #FFFFFF;
+            --border-color: #E5E7EB;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px 40px;
+            color: var(--text-black);
+            line-height: 1.5;
+            background-color: var(--bg-white);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 60px;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            font-weight: 500;
+        }
+
+        .nav-links a {
+            color: var(--text-black);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-blue);
+        }
+
+        .hero {
+            display: flex;
+            gap: 60px;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero-image {
+            flex: 1;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            line-height: 1.4;
+        }
+
+        .subtitle span:first-child {
+            color: var(--text-black);
+        }
+
+        .subtitle span:last-child {
+            color: var(--primary-blue);
+        }
+
+        .description {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            max-width: 600px;
+            color: var(--text-gray);
+        }
+
+        .divider {
+            height: 1px;
+            background-color: var(--border-color);
+            margin: 50px 0;
+        }
+
+        .links {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .links a:first-child {
+            background-color: var(--primary-blue);
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            padding: 8px 12px;
+            gap: 5px;
+            transition: all 0.2s;
+            border-radius: 6px;
+        }
+
+        .links a:last-child {
+            background-color: rgb(241, 245, 247);
+            font-weight: 600;
+            color: var(--primary-blue);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            padding: 8px 12px;
+            gap: 5px;
+            transition: all 0.2s;
+            border-radius: 6px;
+        }
+
+        .links a:hover {
+            text-decoration: none;
+            gap: 8px;
+        }
+
+        /* New ready-to-start section */
+        .ready-section {
+            text-align: center;
+            padding: 80px 0;
+            margin: 80px 0;
+            background-color: #f8fafc;
+            border-radius: 12px;
+        }
+
+        .ready-section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .ready-section p {
+            font-size: 1.2rem;
+            color: var(--text-gray);
+            margin-bottom: 30px;
+        }
+
+        .get-started-btn {
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s;
+            display: inline-block;
+        }
+
+        .get-started-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        /* New footer styles */
+        .footer-container {
+            margin-top: 80px;
+            padding-top: 40px;
+            margin-left: -75px;
+            margin-right: -75px;
+            margin-bottom: -75px;
+            background-color: rgb(4, 4, 24);
+        }
+
+        .footer-columns {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-bottom: 40px;
+            margin-left: 250px;
+        }
+
+        .footer-column h3 {
+            margin-bottom: 20px;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-column li {
+            margin-bottom: 12px;
+        }
+
+        .footer-column a {
+            color: var(--text-gray);
+            text-decoration: none;
+            transition: color 0.2s;
+            font-size: 0.9rem;
+        }
+
+        .footer-column a:hover {
+            color: var(--primary-blue);
+        }
+
+        .newsletter {
+            grid-column: span 1;
+        }
+
+        .newsletter h3 {
+            margin-bottom: 10px;
+        }
+
+        .newsletter p {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .newsletter-form {
+            display: flex;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 8px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 4px 0 0 4px;
+            font-size: 0.9rem;
+        }
+
+        .newsletter-form button {
+            background-color: var(--primary-blue);
+            color: white;
+            border: none;
+            padding: 0 16px;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            padding: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+            }
+
+            .footer-columns {
+                grid-template-columns: 1fr;
+            }
+
+            body {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Devkit.</div>
+        <div class="nav-links">
+            <a href="#">Account</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <p class="subtitle">
+                <span>Welcome to</span>
+                <span style="color: #3B82F6;">Devkit.</span> <br> Develop anything.
+            </p>
+            <p class="description">Build a beautiful, modern website with flexible <br> components built from scratch.
+            </p>
+            <div class="links">
+                <a href="#">View All Pages →</a>
+                <a href="#">Documentation</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="images\hero-image.jpeg" alt="Devkit Hero Image">
+        </div>
+    </section>
+
+    <!-- Get started section -->
+    <section class="ready-section">
+        <h2>Ready to get started?</h2>
+        <p>Talk to us today</p>
+        <a href="#" class="get-started-btn">Get started</a>
+    </section>
+
+    <!-- footer section -->
+    <div class="footer-container">
+        <div class="footer-columns">
+            <div class="footer-column">
+                <h3>ABOUT SAVVY</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Get in touch</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column" style="margin-left: -50;">
+                <h3>PRODUCT</h3>
+                <ul>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">How it works</a></li>
+                    <li><a href="#">Member Discounts</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>NOT QUITE READY FOR SAVVY?</h3>
+                <div class="newsletter">
+                    <p>Join our online no-code community for free. No spam. Ever.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

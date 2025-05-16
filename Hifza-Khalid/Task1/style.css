@@ -1,0 +1,124 @@
+ /* Reset & base styling */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f7fa;
+}
+
+/* Navbar container */
+.navbar {
+    background-color: #f0f2f5;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Hide checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Hamburger icon */
+.menu-icon {
+    font-size: 26px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Horizontal nav links for desktop */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #222;
+    background-color: #f0f2f5;
+    padding: 10px 16px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.09);
+    display: inline-block;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+/* Hover effect (3D upward lift) */
+.nav-links li a:hover {
+    background-color: #e6e9ed;
+    color: #000;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+/* Sidebar menu for small screens */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        z-index: 1001;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100%;
+        background-color: #f0f2f5;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 60px 20px 20px;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        box-shadow: 2px 0 8px rgba(249, 248, 248, 0.981);
+        z-index: 1000;
+    }
+
+    .nav-links li {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .nav-links li a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        box-shadow: none;
+        font-size: 16px;
+    }
+
+    .close-icon {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 24px;
+        cursor: pointer;
+        color: #333;
+    }
+
+    #menu-toggle:checked~.nav-links {
+        transform: translateX(0);
+    }
+}
+
+/* Hide close icon on large screens */
+@media (min-width: 769px) {
+    .close-icon {
+        display: none;
+    }
+}

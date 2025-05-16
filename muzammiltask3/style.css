@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Outfit:wght@100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgb(232, 238, 238);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input-container{
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+}
+.input-container input{
+     border: none;
+     outline: none;
+     padding: 12px;
+     margin-block: 12px;
+     border-radius: 4px;
+     font-size: 16px;
+     padding: 12px 24px;
+}
+.input-container input[type="text"]{
+    width: 70%;
+}
+.input-container input[type="button"]{
+    background-color: #3da33d;
+    color: #ffff;
+    font-weight: 700;
+    margin-left: 8px;
+    cursor: pointer;
+}
+.input-container input[type="button"]:hover{
+     background-color: #60b160;
+}
+ul{
+    width: 100%;
+    max-width: 450px;
+    /* flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex; */
+}
+ul li{
+    list-style: none;
+    cursor: pointer;
+    margin-block-end: 12px;
+    border-radius: 8px;
+    border: 0.12px solid #a19fa1;
+    padding: 6px 12px;
+    background-color: #ffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.5s;
+}
+  ul li:hover{
+      background-color: #cbcbcb;
+}
+ul li p{
+    flex-grow: 1;
+    padding: 2px;
+}
+.btn{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: none;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px;
+}
+.deleteBtn{
+    color: #ff0000;
+}
+.editBtn{
+    color: #008000;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <!-- Custom Css Link -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-blue-50 min-h-screen flex items-center justify-center p-6">
+    <div class="w-full max-w-2xl bg-white p-6 rounded-2xl shadow-lg">
+      <h1 class="text-3xl font-bold text-blue-600 mb-6 text-center">
+        To-Do List App
+      </h1>
+
+      <!-- Task Input Form -->
+      <div class="mb-6 space-y-4">
+        <input
+          id="task-title"
+          type="text"
+          placeholder="Task Title"
+          class="w-full p-3 border border-blue-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <textarea
+          id="task-desc"
+          rows="3"
+          placeholder="Task Description"
+          class="w-full p-3 border resize-none border-blue-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
+        ></textarea>
+        <button
+          id="add-task-btn"
+          class="w-full bg-blue-600 text-white py-3 rounded-xl font-semibold hover:bg-blue-700 transition cursor-pointer"
+        >
+          Add Task
+        </button>
+      </div>
+
+      <!-- Task List -->
+      <ul id="task-list" class="space-y-1">
+      </ul>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Tailwind CSS js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </body>
+</html>

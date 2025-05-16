@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.nav{
+    width:100vw;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+}
+
+.nav2 ul{
+  display: flex;
+  list-style-type: none;
+  gap: 50px;
+  margin-right: 150px;
+}
+
+.nav1{
+    margin-left: 60px;
+}
+.nav1 h1{
+    color: rgb(36, 106, 235);
+}
+
+.hero{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    /* padding-left: 100px; */
+    padding-right: 200px;
+
+    
+}
+
+.hero1{
+    width: 400px;
+    height: 300px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+}
+#sp1{
+    color: rgb(36, 106, 235);
+}
+.hero1 p{
+    margin-left: 60px;
+    color: gray;
+}
+
+.hero1btn{
+    display: flex;
+    gap: 10px;
+    margin-right: 40px;
+}
+
+.hero1btn button{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 2px;
+}
+
+#btn1{
+    color: white;
+    background-color: #3B82F6;
+    border: #3B82F6;
+}
+
+#btn2{
+    background-color: #c3d3ec;
+    border: #89b0ef;
+}
+
+.hero2{
+    width: 350px;
+    height: 250px;
+    background-image: url(./Assets/task2pic-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 100px;
+     
+}
+
+.getstarted{
+    height: 150px;
+    width: 800px;
+    /* width: 60%; */
+    margin-left: 250px;
+    background-color:rgb(210, 203, 204);
+    border-radius: 1px solid white;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    margin-top: -50px;
+    z-index: 2px;
+    position: absolute;
+}
+
+.get2 button{
+    padding: 10px;
+    color: white;
+    background-color: rgb(88, 88, 255);
+    font-size: 10px;
+    margin-left: 5px;
+    width:85px;
+    border: 1px solid rgb(88, 88, 255);
+    border-radius: 5px;
+}
+
+.footer{
+    width:100vw;
+    height: 500px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    gap: 30px;
+    z-index: 1px;
+}
+
+.flogo i{
+    font-size: 40px;
+}
+ul {
+    list-style-type: none;
+    margin-top: 10px;
+   
+}
+
+ul li{
+    padding-bottom: 10px;
+}
+
+
+.footer3{
+    margin-bottom: 30px;
+}
+.footer3 h4{
+    color: gray;
+    margin-bottom: 15px;
+    
+}
+.footer3 p{
+    margin-bottom: 10px;
+}
+input{
+    padding: 10px;
+}
+.input button{
+    padding: 10px;
+    color: white;
+    background-color: rgb(88, 88, 255);
+    font-size: 10px;
+    margin-left: 5px;
+    width:85px;
+    border: 1px solid rgb(88, 88, 255);
+    border-radius: 5px;
+}
+h4{
+    color : gray;
+}
+
+#icon{
+    font-size: 50px;
+    position:absolute;
+    right: 0px;
+    width:50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+   margin-top: 350px;
+   margin-right: 10px;
+    
+    color: rgb(88, 88, 255);
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+#getspan{
+    color: rgb(48, 48, 98);
+}
+
+#getspan2{
+    color: rgb(116, 116, 243);
+}

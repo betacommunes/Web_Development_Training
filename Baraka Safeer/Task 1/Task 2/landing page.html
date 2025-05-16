@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devkit Landing Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9fafc;
+    }
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      gap: 30px;
+      padding: 20px 40px;
+      background-color: #fff;
+    }
+    nav a {
+      text-decoration: none;
+      color: #5c6f8c;
+      font-weight: 500;
+    }
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 80px;
+      background-color: #f9fafc;
+    }
+    .hero-text {
+      max-width: 50%;
+    }
+    .hero-text h1 {
+      font-size: 48px;
+      color: #0f172a;
+    }
+    .hero-text h1 span {
+      color: #3b82f6;
+    }
+    .hero-text p {
+      color: #64748b;
+      margin: 20px 0;
+    }
+    .hero-text .buttons button {
+      margin-right: 10px;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .view-btn {
+      background-color: #3b82f6;
+      color: white;
+    }
+    .doc-btn {
+      background-color: #e0e7ff;
+      color: #1e40af;
+    }
+    .hero-img img {
+      width: 100%;
+      max-width: 400px;
+    }
+    .cta {
+      margin: 60px auto;
+      padding: 40px;
+      max-width: 90%;
+      background-color: #f4f0ff;
+      border-radius: 24px;
+      text-align: center;
+    }
+    .cta h2 {
+      font-size: 32px;
+      color: #6d28d9;
+    }
+    .cta button {
+      margin-top: 20px;
+      padding: 12px 30px;
+      background-color: #6d28d9;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #0f172a;
+      color: #cbd5e1;
+      padding: 50px 80px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    footer div {
+      margin: 10px 0;
+    }
+    .footer-col h4 {
+      color: #94a3b8;
+      margin-bottom: 12px;
+    }
+    .footer-col a {
+      display: block;
+      color: #cbd5e1;
+      text-decoration: none;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+    .subscribe input {
+      padding: 10px;
+      width: 220px;
+      border: none;
+      border-radius: 4px 0 0 4px;
+    }
+    .subscribe button {
+      padding: 10px 20px;
+      background-color: #6d28d9;
+      color: white;
+      border: none;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#">Account</a>
+    <a href="#">About</a>
+    <a href="#">Service</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Welcome to <span>Devkit.</span><br />Develop anything.</h1>
+      <p>Build a beautiful, modern website with flexible components built from scratch.</p>
+      <div class="buttons">
+        <button class="view-btn">View All Pages →</button>
+        <button class="doc-btn">Documentation</button>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="d:\Web_Dev_Interne\Baraka Safeer\Task 2\pic1.jpeg" alt="illustration" />
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Ready to get started? <br />Talk to us today</h2>
+    <button>Get started</button>
+  </section>
+
+  <footer>
+    <div>
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="logo" width="40" />
+    </div>
+    <div class="footer-col">
+      <h4>ABOUT SAVVY</h4>
+      <a href="#">Home</a>
+      <a href="#">Get in touch</a>
+      <a href="#">FAQs</a>
+    </div>
+    <div class="footer-col">
+      <h4>PRODUCT</h4>
+      <a href="#">Testimonials</a>
+      <a href="#">How it works</a>
+      <a href="#">Member Discounts</a>
+    </div>
+    <div class="footer-col">
+      <h4>NOT QUITE READY FOR SAVVY?</h4>
+      <p>Join our online no-code community for free. No spam. Ever.</p>
+      <div class="subscribe">
+        <input type="email" placeholder="Enter your email" />
+        <button>Subscribe</button>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
