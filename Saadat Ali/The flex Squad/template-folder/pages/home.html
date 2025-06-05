@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Home page</h1>
+    <main>
+  <!-- Components will be loaded via JS -->
+  <div data-component="./components/navbar/navbar.html"></div>
+  <div data-component="./components/slider/slider.html"></div>
+</main>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .our-story .container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 60px;
+    }
+    
+    .main-nav {
+        display: none;
+    }
+    
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Responsive Adjustments */
+        @media (max-width: 1024px) {
+            .gallery-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px; /* Even tighter on mobile */
+            }
+            
+            .gallery-title {
+                font-size: 26px;
+                letter-spacing: 2px;
+            }
+            
+            .gallery-item {
+                height: 180px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+                gap: 6px;
+            }
+            
+            .gallery-title {
+                font-size: 22px;
+            }
+            
+            .gallery-item {
+                height: 160px;
+            }
+        }
